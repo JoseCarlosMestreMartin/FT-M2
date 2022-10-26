@@ -1,0 +1,8 @@
+DOM:
+    Es un modelo que nos permite interactuar con el navegador para manipular los elementos de la pagina,  que observa el usuario, mediante objetos en javascript.
+
+DOM element selectores:
+    Los selectores nos permiten seleccionar elementos del documento(página html) para interactuar con ellos atraves de objetos en javascript
+DOM events:
+    son eventos, se generan cuando algo sucede en el lavegador. Como cuando el usuario realiza algo.
+    Estos eventos son escuchados en event liseners, y hay es donde nosotros podemos colocar funciones para que sean ejecutadas cuando el evento correspondiente se genere.
