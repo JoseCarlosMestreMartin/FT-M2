@@ -1,1 +1,20 @@
 // Mixins acá
+.mixinFlex(@direction : row){
+    display: flex;
+    flex-direction: @direction;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.bottom(@width,@height,@bg, @text-color ){
+    width:@width;
+    height: @height;
+    background-color: @bg;
+    border-radius: 0.5em;
+    padding: 0.8em;
+    color: @text-color;
+    font-size: medium;
+
+}

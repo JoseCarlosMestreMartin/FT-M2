@@ -25,9 +25,19 @@
       border-radius: 20px;
       height: 100%;
     }
+    @media(max-width: @phone){
+      .tecnologia, .ondas{
+        display: none;
+      }
+      .auricular{
+       width: 99%; 
+      }
+    }
   }
+  
 
-  .musica-nueva {
+
+  .musica-nueva {                   
     padding: 15px;
 
     h3 {
@@ -45,8 +55,15 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media(max-width: @phone) {
+      align-items: center; //jcm  
+      flex-direction: comlumn-reverse;
+    }
+    
     .actual-text {
+      @media(max-width: @phone) {
+        width: 100%;//jcm  
+      }
       width: 50%;
 
       h3 {
@@ -58,6 +75,10 @@
       }
 
       .btn {
+        .bottom(fit-content,fit-content,@btn-bg-color, @border-real )
+      }
+      .btn:hover{
+        .bottom(fit-content,fit-content,@border-real,  @btn-bg-color)
       }
     }
 
@@ -71,5 +92,22 @@
         border-radius: 10px;
       }
     }
+  }
+  @media(max-width: @phone){
+    .actual{
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+img{
+  border-radius: 20px;
+  margin: 10px;
+}
+@media(max-width: @phone){
+  img{
+    width: 95%;
+    margin: 1em;
   }
 }

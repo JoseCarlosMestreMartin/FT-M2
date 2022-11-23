@@ -13,11 +13,12 @@
     "is-react": "^1.5.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^4.0.3",
+    "webpack": "^4.44.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "jest --verbose --detectOpenHandles",
     "eject": "react-scripts eject"
   },

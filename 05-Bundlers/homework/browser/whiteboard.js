@@ -1,7 +1,8 @@
-(function () {
+//(function () {
+  var EE = require("./event-emitter.js");
 
-  window.whiteboard = new window.EventEmitter();
-
+  //window.whiteboard = new window.EventEmitter();
+  var whiteboard = new EE();
   // Ultimately, the color of our stroke;
   var color;
 
@@ -112,5 +113,5 @@
     }
 
   };
-
-})();
+module.exports = whiteboard;
+//})();
