@@ -26,8 +26,20 @@ export default function Zoo() {
       )
       .catch((error) => console.log(error));
   }, []);
-  function handleSpecies(e) {}
-  function handleAllSpecies() {}
+  function handleSpecies(e) {
+    setZoo({
+      ...zoo,
+      animals: zoo.allAnimals.filter(
+        ({specie}) => specie === e.target.value
+        ),
+    });
+  }
+  function handleAllSpecies() {
+    setZoo({
+      ...zoo,
+      animals: zoo.allAnimals,
+    });
+  }
 
   function handleInputChange(e) {
     setZoo({

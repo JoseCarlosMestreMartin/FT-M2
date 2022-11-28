@@ -12,7 +12,7 @@ export default function Species(props) {
           {specie}
         </button>
       ))}
-      {/* button onClick={handleAllSpecies}>All Animals</button> */}
+      <button onClick={props.handleAllSpecies}>All Animals</button>
     </div>
   );
 }

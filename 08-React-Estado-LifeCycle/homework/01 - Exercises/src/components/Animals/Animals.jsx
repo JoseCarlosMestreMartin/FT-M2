@@ -9,8 +9,6 @@ export default class Animals extends React.Component {
     console.log(this.props.animals);
     return (
       <div>
-        <span>aqui va animals</span>
-        
         {this.props.animals.map((animal, index) => (
           <div key={index}>
             <h5>{animal.name}</h5>
